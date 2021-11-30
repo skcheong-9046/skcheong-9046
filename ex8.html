@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Loop & Array</h1>
+<h2> family1</h2>
+<ul>
+    <li>아빠</li>
+    <li>엄마</li>
+    <li>오빠</li>
+    <li>여동생</li>
+</ul>
+<script>
+var family = ['아빠','엄마','오빠','여동생'];
+document.write(family.length);
+</script>
+
+ <h2>family2</h2>
+ <ul>
+<script>
+   var i = 0;
+   while( i < family.length ) {
+    document.write('<li>'+family[i]+'</li>');
+     i = i + 1;
+    }
+</script>
+
+<script>
+document.write(family.length);
+</script>
+
+ <h2>family3</h2>
+ <ul>
+<script>
+  var i = 0;
+  while( i < family.length ) {
+  document.write('<li><a href="http://a.com/'+family[i]+'"></a>'+family[i]+'</li>');
+     i = i + 1;
+    }
+</script>
+
+
+</ul>
+
+
+
+
+
+  </body>
+</html>

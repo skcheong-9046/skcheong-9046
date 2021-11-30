@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object-객체</h1>
+    <h2>Creater-생성</h2>
+    <script>
+      var coworker = {
+        "programmer":"egoing",
+        "designer":"leezche"
+      };
+      document.write("programmer :"+coworker.programmer+'<br>');
+      document.write('designer :'+coworker.designer+'<br>');
+      coworker.bookkepper = "duru;"
+      document.write("bookkepper :"+coworker.bookkepper+"<br>")
+      coworker["data scientist"] = "taeho"
+      document.write('data scientist :'+coworker["data scientist"]+'<br>')
+      </script>
+        <h2>Iterate01</h2>
+        <script>
+          for(var key in coworker){
+           document.write(key+'<br>')
+          }
+      </script>
+      <h2>Iterate02</h2>
+      <script>
+        for(var key in coworker){
+         document.write(coworker[key]+'<br>')
+        }
+      </script>
+        <h2>Iterate03</h2>
+  <script>
+    for(var key in coworker){
+     document.write(key+' : '+coworker[key]+'<br>')
+    }
+  </script>
+  <h2>Property & Method</h2>
+  <script>
+    coworker.showAll = function(){
+      for( var key in coworker){
+        document.write(key+' : '+coworker[key]+'<br>');
+      }
+    }
+    coworker.showAll();
+  </script>
+  <h2>Property & Method</h2>
+  <script>
+    coworker.showAll = function(){
+      for( var key in this){
+        document.write(key+' : '+this[key]+'<br>');
+      }
+    }
+    coworker.showAll();
+  </script>
+
+  </body>
+</html>

@@ -1,5 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+#!python
+import sys
+import codecs
+sys.stdout=codecs.getwriter("utf-8")(sys.stdout.detach())
+print("content-type: text/html; charset=utf-8\n")
+print()
+print("""
+<!doctype html>
+<html>
   <head>
     <meta charset="utf-8">
     <title>GOLF</title>
@@ -348,6 +355,7 @@ TIP	 그립은 손가락으로만, 왼손은 스트롱그립을, 오른손은 �
 <br>	<a href="https://youtu.be/erax5XNNv9E">연습동영상02</a>
 <br>	<a href="https://youtu.be/WiEWrYajhdQ">연습동영상03</a>
 </p>
-
 </body>
 </html>
+
+""")

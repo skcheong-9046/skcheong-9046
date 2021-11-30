@@ -3,35 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>GOLF</title>
-
+  <link rel="stylesheet" href="style.css">
   </head>
-  <style>
-    #grid {
-    border:5px solid pink;
-    display:grid;
-    grid-template-columns:150px 1fr;
-  }
-  /*  div{
-    border-width:5px;
-    border-style:solid;
-    border-color:pink;} */
-
-  </style>
-</head>
 
 <body>
-  <div id="grid">
-<strong>근로소득</strong> 외 <u>다른소득</u>을 만들어라.
+  <br><strong>근로소득</strong> 외 <u>다른소득</u>을 만들어라.
+  <br><input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
+<input id="night_day" type="dutton" value="night" onclick="
+if(document.querySelector('#night_day').value === 'night')
+{ document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('dody').style.color = 'white';
+  document.querySelector('#night_day').value = 'day';
+} else {
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('dody').style.color = 'black';
+  document.querySelector('#night_day').value = 'night';
+}
+">
 
-<h1> <a href="1.html">골프란 ? </a></h1>
+<style media="screen">
+  h3{"background-color: coral; color:blue;"}
+</style>
+  <h1> <a href="1.html">골프란 ? </a></h1>
 <div id="article">
-<h3>그대로들고 나가지, 말고 (밀어올려)</h3>
-<h3>그대로들고 나가지, 말고 (밟아)</h3>
-<h3>왼팔천천히 나가지, 말고 (밀어)</h3>
-<h3>왼팔천천히 나가지, 말고 (꿀밤)</h3>
+<h3 > 그대로들고 나가지, 말고 (밀어올려)</h3>
+<h3 >그대로들고 나가지, 말고 (밟아)</h3>
+<h3 >왼팔천천히 나가지, 말고 (밀어)</h3>
+<h3 style="color:red;">왼팔천천히 나가지, 말고 (꿀밤)</h3>
 <img src="골프01.jpg" width=50%>
-<P>GOLF란 ? - 스윙이 아니고, 집중이며, 몰입이고, 습관이며, 전략이다.
-SWING이란 ? - 제자리회전이며 하체로 휘두르며, 왼쪽에서 소리나게, 원을 그리는 것으로, 빨라지면서 지나치는 것이다
+<P><div> GOLF란 ?</div>  - 스윙이 아니고, 집중이며, 몰입이고, 습관이며, 전략이다.
+<br><span style="font-weight:bold;">SWING이란 ?</span> - 제자리회전이며 하체로 휘두르며, 왼쪽에서 소리나게, 원을 그리는 것으로, 빨라지면서 지나치는 것이다
 착한스윙이란 ? - 내몸에 어울리는 스윙으로, 스코어를 내기위한 수단으로서 스윙이다.
 임펙트란 ? -  히팅이 아니라 다운스윙의 한 과정이다.( 과도한 힘을 자제하라. )
 Putting ? : 등으로- 밟고
@@ -39,9 +47,28 @@ Putting ? : 등으로- 밟고
 기준거리 퍼팅을 ( 10cm, 3m, 5발 / 60cm, 18m, 30발 ) 확보하라.
 연습이란 ? - 샷의 경향을 파악하고, 집중과 몰입능력을 향상하는 것이다.
 </p>
-   </div>
-
-벙커샷	그린주변 벙커
+</div>
+<br><input type="button" value="night" onclick="
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+">
+<input type="button" value="day" onclick="
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';
+">
+<input id="night_day" type="dutton" value="night" onclick="
+var target = document.querySelector('body')
+if(this.value === 'night')
+{ target.style.backgroundColor='black';
+  target.style.color = 'white';
+  this.value = 'day';
+} else {
+  target.style.backgroundColor = 'white';
+  target.style.color = 'black';
+  this.value = 'night';
+}
+">
+<br>벙커샷	그린주변 벙커
 S	 - 스텐스 오픈(11시), 크럽 오픈(1시), 볼뒤의 2cm(볼밑의 가상의 티)를 타격한다.
 체중위치	 - 볼의 위치 : 왼발 앞쪽 , 궤도 : OUT - IN
 (왼발쪽)	 - 거리조절 : 백스윙의 크기로 하는 곱하기 2의법칙 ( 20m*2=40m )
